@@ -22,11 +22,12 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: 566a4643-2879-43e2-b7da-6aea13940151
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    {}
+    debugMode: false
+    maxStorageMB: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -36,10 +37,11 @@
   Attachments:
     []
   DefaultScriptInputs:
-    -
-      {}
+    - debugMode: false
+      maxStorageMB: !<float> 50.000000
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'
+    - '// @input float maxStorageMB = 50 {"hint":"Maximum storage size in MB"}'

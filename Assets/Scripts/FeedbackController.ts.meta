@@ -1,0 +1,74 @@
+- !<AssetImportMetadata/ac2304e6-5d07-4cbd-a2bd-b3f1ea2ec9ec>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> edb12b89-345c-4fee-ba1d-9459a81d9d7c
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> edb12b89-345c-4fee-ba1d-9459a81d9d7c
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 5eb9425f-58c8-4b7e-8586-4ae8a67a480a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/5eb9425f-58c8-4b7e-8586-4ae8a67a480a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 39b20fd7-3e41-41e6-bbc6-3a3198fefa71
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    categoryText: false
+    connectionLine: false
+    correctPositionGhost: false
+    debugMode: false
+    feedbackDuration: false
+    feedbackPanel: false
+    perfectEffect: false
+    positionErrorText: false
+    rotationErrorText: false
+    scoreText: false
+    timeText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - feedbackDuration: !<float> 3.000000
+      scoreText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      categoryText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      positionErrorText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      rotationErrorText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      timeText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      correctPositionGhost: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      connectionLine: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      perfectEffect: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      feedbackPanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      debugMode: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float feedbackDuration = 3 {"hint":"Feedback display duration in seconds"}'
+    - '// @input Component.Text scoreText {"hint":"Score text component"}'
+    - '// @input Component.Text categoryText {"hint":"Category text component"}'
+    - '// @input Component.Text positionErrorText {"hint":"Position error text"}'
+    - '// @input Component.Text rotationErrorText {"hint":"Rotation error text"}'
+    - '// @input Component.Text timeText {"hint":"Time taken text"}'
+    - '// @input SceneObject correctPositionGhost {"hint":"Ghost object showing correct position"}'
+    - '// @input SceneObject connectionLine {"hint":"Line connecting guess to correct"}'
+    - '// @input SceneObject perfectEffect {"hint":"Particle effect for perfect match"}'
+    - '// @input SceneObject feedbackPanel {"hint":"Feedback panel scene object"}'
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'

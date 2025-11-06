@@ -7,7 +7,7 @@
 export class CustomLocationSync extends BaseScriptComponent {
   @input
   @hint("Reference to the Custom Location asset")
-  private customLocation: Asset.LocationAsset | null = null;
+  private customLocation: LocationAsset | null = null;
 
   @input
   @hint("Minimum tracking confidence required (0.0 - 1.0)")
@@ -23,8 +23,8 @@ export class CustomLocationSync extends BaseScriptComponent {
 
   private currentStatus: SyncStatus = SyncStatus.NOT_SYNCED;
   private currentConfidence: number = 0.0;
-  private trackingComponent: LocationTrackingComponent | null = null;
-  private updateEvent: DelayedCallbackEvent | null = null;
+  private trackingComponent: DeviceLocationTrackingComponent | null = null;
+  private updateEvent: UpdateEvent | null = null;
 
   onAwake() {
     this.setupLocationTracking();
@@ -40,13 +40,13 @@ export class CustomLocationSync extends BaseScriptComponent {
       return;
     }
 
-    // Find LocationTrackingComponent in scene
+    // Find DeviceLocationTrackingComponent in scene
     const sceneObjects = this.getSceneObject().getParent()?.children;
     if (sceneObjects) {
       for (let i = 0; i < sceneObjects.length; i++) {
         const tracking = sceneObjects[i].getComponent(
-          "LocationTrackingComponent"
-        );
+          "DeviceLocationTrackingComponent"
+        ) as DeviceLocationTrackingComponent;
         if (tracking) {
           this.trackingComponent = tracking;
           break;
@@ -55,7 +55,7 @@ export class CustomLocationSync extends BaseScriptComponent {
     }
 
     if (!this.trackingComponent && this.debugMode) {
-      print("CustomLocationSync: LocationTrackingComponent not found");
+      print("CustomLocationSync: DeviceLocationTrackingComponent not found");
     }
   }
 

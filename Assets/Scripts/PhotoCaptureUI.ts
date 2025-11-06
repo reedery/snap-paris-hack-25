@@ -50,7 +50,7 @@ export class PhotoCaptureUI extends BaseScriptComponent {
   @hint("Enable debug mode")
   private debugMode: boolean = false;
 
-  private updateEvent: DelayedCallbackEvent | null = null;
+  private updateEvent: UpdateEvent | null = null;
 
   onAwake() {
     this.setupEventListeners();

@@ -1,0 +1,86 @@
+- !<AssetImportMetadata/65ba4748-1a2f-4847-b759-aba9bfccacbd>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 888b66ac-5e76-41c9-9056-58c9e1652923
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 888b66ac-5e76-41c9-9056-58c9e1652923
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d44940c3-2b96-4af4-b4b9-66f3ae81820a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d44940c3-2b96-4af4-b4b9-66f3ae81820a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: fcb2eb94-660f-4531-8162-abd7c49dc696
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    actionButton: false
+    completionPanel: false
+    debugMode: false
+    finalScoreText: false
+    gameManager: false
+    locationSync: false
+    nextButton: false
+    pauseButton: false
+    progressText: false
+    scoreDisplay: false
+    scoringSystem: false
+    statusText: false
+    streakText: false
+    syncIndicator: false
+    timerText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - gameManager: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      scoringSystem: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      locationSync: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      progressText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      timerText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      scoreDisplay: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      streakText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      statusText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      syncIndicator: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      actionButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      nextButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      pauseButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      completionPanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      finalScoreText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      debugMode: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input AssignableType gameManager {"hint":"Reference to GameManager"}'
+    - '// @input AssignableType_1 scoringSystem {"hint":"Reference to ScoringSystem"}'
+    - '// @input AssignableType_2 locationSync {"hint":"Reference to CustomLocationSync"}'
+    - "// @input Component.Text progressText {\"hint\":\"Progress text (e.g., 'Photo 3/10')\"}"
+    - '// @input Component.Text timerText {"hint":"Timer text showing elapsed time"}'
+    - '// @input Component.Text scoreDisplay {"hint":"Current score display"}'
+    - '// @input Component.Text streakText {"hint":"Streak indicator"}'
+    - '// @input Component.Text statusText {"hint":"Status message text"}'
+    - '// @input SceneObject syncIndicator {"hint":"Sync indicator object"}'
+    - '// @input SceneObject actionButton {"hint":"Main action button (capture guess)"}'
+    - '// @input SceneObject nextButton {"hint":"Next photo button"}'
+    - '// @input SceneObject pauseButton {"hint":"Pause button"}'
+    - '// @input SceneObject completionPanel {"hint":"Completion panel"}'
+    - '// @input Component.Text finalScoreText {"hint":"Final score text"}'
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'

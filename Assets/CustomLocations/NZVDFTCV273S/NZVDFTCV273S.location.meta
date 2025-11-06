@@ -1,8 +1,8 @@
-- !<AssetImportMetadata/55c9d64f-ca0d-4907-88e0-a235805123e9>
+- !<AssetImportMetadata/f91d54cf-37ab-41da-9ec9-31ad1a52e117>
   ImportedAssetIds:
-    LocationAsset: !<reference> 140cb4dc-b624-4363-8caf-691169dbe581
+    LocationAsset: !<reference> 2d35db95-14ee-43bb-96f3-1ad1de94173a
   ImporterName: LocationAssetImporter
-  PrimaryAsset: !<reference> 140cb4dc-b624-4363-8caf-691169dbe581
+  PrimaryAsset: !<reference> 2d35db95-14ee-43bb-96f3-1ad1de94173a
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:

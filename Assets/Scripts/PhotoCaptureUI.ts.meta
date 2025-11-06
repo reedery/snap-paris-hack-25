@@ -22,11 +22,20 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: aaa719b8-8e78-4eee-bb93-d81f9d06302c
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    {}
+    captureButton: false
+    captureManager: false
+    counterText: false
+    debugMode: false
+    enableHaptics: false
+    locationSync: false
+    progressBar: false
+    statusMaterial: false
+    statusText: false
+    syncIndicator: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -36,10 +45,27 @@
   Attachments:
     []
   DefaultScriptInputs:
-    -
-      {}
+    - captureManager: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      locationSync: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      counterText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      statusText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      progressBar: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      syncIndicator: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      captureButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      statusMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      enableHaptics: true
+      debugMode: false
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - '// @input AssignableType captureManager {"hint":"Reference to PhotoCaptureManager"}'
+    - '// @input AssignableType_1 locationSync {"hint":"Reference to CustomLocationSync"}'
+    - '// @input Component.Text counterText {"hint":"Text component for photo counter"}'
+    - '// @input Component.Text statusText {"hint":"Text component for status messages"}'
+    - '// @input SceneObject progressBar {"hint":"SceneObject for progress bar"}'
+    - '// @input SceneObject syncIndicator {"hint":"SceneObject for sync indicator"}'
+    - '// @input SceneObject captureButton {"hint":"SceneObject for capture button"}'
+    - '// @input Asset.Material statusMaterial {"hint":"Material for status color feedback"}'
+    - '// @input bool enableHaptics = true {"hint":"Enable haptic feedback on capture"}'
+    - '// @input bool debugMode {"hint":"Enable debug mode"}'

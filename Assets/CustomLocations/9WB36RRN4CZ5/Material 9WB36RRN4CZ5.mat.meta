@@ -1,8 +1,8 @@
-- !<AssetImportMetadata/22d4e61d-5788-4e9a-86dd-8fa4f629d9f4>
+- !<AssetImportMetadata/3a0bdf10-0b51-47fb-a20a-9af09443aaa6>
   ImportedAssetIds:
-    LocationMesh: !<reference> ce3f9976-e432-46f6-abfa-c7183a268672
-  ImporterName: LocationMeshImporter
-  PrimaryAsset: !<reference> ce3f9976-e432-46f6-abfa-c7183a268672
+    Material: !<reference> 386f660e-072d-4337-8972-ae4cd34b191a
+  ImporterName: MaterialImporter
+  PrimaryAsset: !<reference> 386f660e-072d-4337-8972-ae4cd34b191a
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:

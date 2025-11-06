@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/d3b5c849-aea0-40d1-8d70-721da52dad37>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c5058562-0af0-4c43-b28e-49daae2449a5
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c5058562-0af0-4c43-b28e-49daae2449a5
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 4a6071e1-e6cd-47b3-a148-098ec624b8db
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/4a6071e1-e6cd-47b3-a148-098ec624b8db>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 5b69ceb1-0916-4dd2-907f-4c46fdfc541b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    debugMode: false
+    markButton: false
+    readyButton: false
+    timerText: false
+    tipsText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - timerText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      markButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      tipsText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      readyButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      debugMode: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input Component.Text timerText {"hint":"Timer text component"}'
+    - '// @input SceneObject markButton {"hint":"Mark location button scene object"}'
+    - '// @input Component.Text tipsText {"hint":"Tips text component"}'
+    - '// @input SceneObject readyButton {"hint":"Ready button to skip remaining time"}'
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'

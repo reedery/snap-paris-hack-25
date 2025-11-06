@@ -22,11 +22,19 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: 32e65dc7-7260-4918-82d9-e21241be542a
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    {}
+    autoSaveInterval: false
+    camera: false
+    captureDelay: false
+    customLocationId: false
+    debugMode: false
+    locationSync: false
+    maxPhotos: false
+    minPhotos: false
+    storageManager: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -36,10 +44,25 @@
   Attachments:
     []
   DefaultScriptInputs:
-    -
-      {}
+    - maxPhotos: !<float> 15.000000
+      minPhotos: !<float> 5.000000
+      captureDelay: 0.500000
+      autoSaveInterval: !<float> 3.000000
+      locationSync: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      storageManager: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      customLocationId: ""
+      debugMode: false
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - '// @input float maxPhotos = 15 {"hint":"Maximum number of photos per puzzle"}'
+    - '// @input float minPhotos = 5 {"hint":"Minimum photos required to create valid puzzle"}'
+    - '// @input float captureDelay = 0.5 {"hint":"Cooldown between captures in seconds"}'
+    - '// @input float autoSaveInterval = 3 {"hint":"Auto-save progress every N photos"}'
+    - '// @input AssignableType locationSync {"hint":"Reference to CustomLocationSync component"}'
+    - '// @input AssignableType_1 storageManager {"hint":"Reference to PhotoStorageManager component"}'
+    - '// @input Component.Camera camera {"hint":"Camera component for capturing photos"}'
+    - '// @input string customLocationId {"hint":"Custom Location asset ID"}'
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'

@@ -22,11 +22,14 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: a1f42157-cb1d-4a87-8a1b-8373cd155d8a
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    {}
+    captureManager: false
+    debugMode: false
+    enableHaptics: false
+    interactable: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -36,10 +39,15 @@
   Attachments:
     []
   DefaultScriptInputs:
-    -
-      {}
+    - captureManager: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      interactable: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      enableHaptics: true
+      debugMode: false
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - '// @input AssignableType captureManager {"hint":"Reference to PhotoCaptureManager component"}'
+    - '// @input AssignableType_1 interactable {"hint":"Reference to Interactable component on this button"}'
+    - '// @input bool enableHaptics = true {"hint":"Enable haptic feedback on tap"}'
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'

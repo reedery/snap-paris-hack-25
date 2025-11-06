@@ -22,11 +22,13 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: b167ab43-be38-403b-ad26-8122db5d6909
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    {}
+    customLocation: false
+    debugMode: false
+    minConfidence: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -36,10 +38,13 @@
   Attachments:
     []
   DefaultScriptInputs:
-    -
-      {}
+    - customLocation: !<reference.LocationAsset> 00000000-0000-0000-0000-000000000000
+      minConfidence: 0.700000
+      debugMode: false
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - '// @input Asset.LocationAsset customLocation {"hint":"Reference to the Custom Location asset"}'
+    - '// @input float minConfidence = 0.7 {"hint":"Minimum tracking confidence required (0.0 - 1.0)"}'
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'

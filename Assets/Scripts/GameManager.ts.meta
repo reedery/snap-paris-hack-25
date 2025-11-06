@@ -1,0 +1,71 @@
+- !<AssetImportMetadata/0b5e5e4a-fb34-4a34-849a-72d4cae9ec0b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c17a5e9e-61eb-476c-a4df-060a2f59fc59
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c17a5e9e-61eb-476c-a4df-060a2f59fc59
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 9b76aeef-5f81-4e27-8a77-6bc9f333a009
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/9b76aeef-5f81-4e27-8a77-6bc9f333a009>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 4cb07bb7-ddac-42e6-aa52-10ce733cea27
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    debugMode: false
+    difficultyMode: false
+    explorationController: false
+    explorationDuration: false
+    feedbackController: false
+    locationSync: false
+    photoPresentationController: false
+    positionMatchingController: false
+    scoringSystem: false
+    storageManager: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - explorationDuration: !<float> 45.000000
+      difficultyMode: 0
+      locationSync: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      explorationController: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      photoPresentationController: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      positionMatchingController: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      scoringSystem: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      feedbackController: !<MappingBased.AssignableType_5> 00000000-0000-0000-0000-000000000000
+      storageManager: !<MappingBased.AssignableType_6> 00000000-0000-0000-0000-000000000000
+      debugMode: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float explorationDuration = 45 {"hint":"Exploration phase duration in seconds"}'
+    - '// @input int difficultyMode {"hint":"Difficulty mode for the game (0=Easy, 1=Normal, 2=Hard, 3=Expert)"}'
+    - '// @input AssignableType locationSync {"hint":"Reference to CustomLocationSync"}'
+    - '// @input AssignableType_1 explorationController {"hint":"Reference to ExplorationPhaseController"}'
+    - '// @input AssignableType_2 photoPresentationController {"hint":"Reference to PhotoPresentationController"}'
+    - '// @input AssignableType_3 positionMatchingController {"hint":"Reference to PositionMatchingController"}'
+    - '// @input AssignableType_4 scoringSystem {"hint":"Reference to ScoringSystem"}'
+    - '// @input AssignableType_5 feedbackController {"hint":"Reference to FeedbackController"}'
+    - '// @input AssignableType_6 storageManager {"hint":"Reference to PhotoStorageManager"}'
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'

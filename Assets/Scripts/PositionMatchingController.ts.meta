@@ -1,0 +1,65 @@
+- !<AssetImportMetadata/2dde2cf1-8e6e-438a-8cc1-e4ea102d7b98>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 0da55791-78af-4b2d-813b-9376a1a6d4cf
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 0da55791-78af-4b2d-813b-9376a1a6d4cf
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d3c77f95-ee08-42d5-8147-be351cf8d147
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d3c77f95-ee08-42d5-8147-be351cf8d147>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 699df648-6062-4f86-bc07-acaa28baaa5b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    debugMode: false
+    deviceTracking: false
+    distanceText: false
+    ghostOutline: false
+    positionTolerance: false
+    rotationIndicator: false
+    rotationTolerance: false
+    targetCircle: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - deviceTracking: !<reference.DeviceTracking> 00000000-0000-0000-0000-000000000000
+      positionTolerance: !<float> 1.000000
+      rotationTolerance: !<float> 15.000000
+      ghostOutline: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      distanceText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      rotationIndicator: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      targetCircle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      debugMode: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input Component.DeviceTracking deviceTracking {"hint":"Device tracking component"}'
+    - '// @input float positionTolerance = 1 {"hint":"Position tolerance in meters"}'
+    - '// @input float rotationTolerance = 15 {"hint":"Rotation tolerance in degrees"}'
+    - '// @input SceneObject ghostOutline {"hint":"Ghost outline object at target position"}'
+    - '// @input Component.Text distanceText {"hint":"Distance indicator text"}'
+    - '// @input SceneObject rotationIndicator {"hint":"Rotation indicator object"}'
+    - '// @input SceneObject targetCircle {"hint":"Ground circle showing target area"}'
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'

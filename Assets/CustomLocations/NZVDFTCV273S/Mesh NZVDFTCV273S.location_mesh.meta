@@ -1,8 +1,8 @@
-- !<AssetImportMetadata/c92e3eec-e5bd-4bbb-b9f7-f16cdc842030>
+- !<AssetImportMetadata/9c980df0-3594-4291-a4b4-0480ae6857a1>
   ImportedAssetIds:
-    LocationAsset: !<reference> 01e9d7b4-a2ca-4b40-b125-39fe74318412
-  ImporterName: LocationAssetImporter
-  PrimaryAsset: !<reference> 01e9d7b4-a2ca-4b40-b125-39fe74318412
+    LocationMesh: !<reference> 5a6a60b3-1f68-487e-bacb-97b2715d04d0
+  ImporterName: LocationMeshImporter
+  PrimaryAsset: !<reference> 5a6a60b3-1f68-487e-bacb-97b2715d04d0
   PackageType: NotAPackage
   LegacyPackagePolicy: ~
   ExtraData:

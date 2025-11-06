@@ -1,0 +1,65 @@
+- !<AssetImportMetadata/132731de-e0b6-4653-8c7b-728a527bdf7f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 53893539-d5d4-471d-bc28-10d7eeadc2e3
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 53893539-d5d4-471d-bc28-10d7eeadc2e3
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> b684c32a-5707-42b3-898f-2971811c8f1b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/b684c32a-5707-42b3-898f-2971811c8f1b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 81fc6b3f-9904-44f7-8269-40a741209b68
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    basePoints: false
+    debugMode: false
+    perfectBonus: false
+    positionErrorWeight: false
+    rotationErrorWeight: false
+    speedBonus: false
+    streakBonus: false
+    timePenaltyWeight: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - basePoints: !<float> 1000.000000
+      positionErrorWeight: !<float> 100.000000
+      rotationErrorWeight: !<float> 10.000000
+      timePenaltyWeight: !<float> 5.000000
+      streakBonus: !<float> 100.000000
+      perfectBonus: !<float> 500.000000
+      speedBonus: !<float> 250.000000
+      debugMode: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float basePoints = 1000 {"hint":"Base points per photo"}'
+    - '// @input float positionErrorWeight = 100 {"hint":"Position error weight in scoring"}'
+    - '// @input float rotationErrorWeight = 10 {"hint":"Rotation error weight in scoring"}'
+    - '// @input float timePenaltyWeight = 5 {"hint":"Time penalty weight"}'
+    - '// @input float streakBonus = 100 {"hint":"Streak bonus per consecutive success"}'
+    - '// @input float perfectBonus = 500 {"hint":"Perfect match bonus"}'
+    - '// @input float speedBonus = 250 {"hint":"Speed bonus for quick completion"}'
+    - '// @input bool debugMode {"hint":"Enable debug logging"}'

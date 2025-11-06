@@ -4,6 +4,7 @@
  */
 
 import { PhotoCaptureManager } from "./PhotoCaptureManager";
+import { Interactable } from "SpectaclesInteractionKit.lspkg/Components/Interaction/Interactable/Interactable";
 
 @component
 export class CaptureButtonHandler extends BaseScriptComponent {
@@ -38,8 +39,8 @@ export class CaptureButtonHandler extends BaseScriptComponent {
       return;
     }
 
-    // Bind tap event
-    this.interactable.onTap.add(() => {
+    // Bind trigger event (equivalent to tap)
+    this.interactable.onTriggerEnd.add(() => {
       this.onButtonTapped();
     });
 
