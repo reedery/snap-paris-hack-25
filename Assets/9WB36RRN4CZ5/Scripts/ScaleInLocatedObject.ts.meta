@@ -1,0 +1,44 @@
+- !<AssetImportMetadata/42d34435-2438-5726-77e5-012d91c1bf80>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 44172cb6-fef4-41e0-86e7-028d36d25b6f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 44172cb6-fef4-41e0-86e7-028d36d25b6f
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 3ad3853c-a21e-43a9-b823-734fa6fd0ce4
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/3ad3853c-a21e-43a9-b823-734fa6fd0ce4>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 9a024630-55e6-4922-b611-fcc820cf0427
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    animationSpeed: false
+    contentSceneObject: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - contentSceneObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      animationSpeed: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject contentSceneObject {"hint":"Will be enabled the first time it is activated"}'
+    - // @input float animationSpeed
