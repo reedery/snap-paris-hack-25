@@ -1,0 +1,169 @@
+- !<AssetImportMetadata/0ff0f439-7b49-1d2f-0aed-0e2856244f3c>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 0dca7626-ff65-445b-91fc-22c391de4064
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 0dca7626-ff65-445b-91fc-22c391de4064
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> b02e2f18-ca7e-47e3-b91a-c7952731324f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/4a901ea3-d6ab-4e33-a1a5-1704d5d0bdbf>
+  PrefabRemaps:
+    []
+  Name: SM_raylight
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 25.209940, y: 25.209940, z: 25.174295}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 70f718b7-acf1-45f8-8e41-ef3f8d0a6ef4
+- !<RenderMeshVisual/70f718b7-acf1-45f8-8e41-ef3f8d0a6ef4>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 650e58ae-6537-4137-b283-51aa59811055
+  Mesh: !<reference> 546812a7-10a4-4a85-bb5a-dd67b4fb70a4
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefab/7b6499a9-0f13-4ab8-975c-d0ade49a18c4>
+  PackagePath: ""
+  objects:
+    - !<own> c5839356-f1d7-4880-927f-be4f29d5389e
+  LazyLoading: false
+  RetainAssets: true
+- !<AnimationPlayer/9bfdfb99-0f32-4f11-b058-1540dcc5c97b>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  Autoplay: true
+  ClipRangeType: Frames
+  AnimationClips:
+    - !<AnimationClip>
+      AnimationAsset: !<reference> b0857d5b-203b-41a9-92db-d34fb520f404
+      Name: Scene
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 59.000000
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+- !<VFXComponent/aa38e010-3469-45e7-b640-b0566ff77200>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> b61ab94a-ee27-4c21-acb5-10c2c9e5cefd
+- !<SceneObject/ad95f78e-f715-475f-bfc1-f83eeca18305>
+  PrefabRemaps:
+    []
+  Name: raylight
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 0.019000, y: 0.190000, z: 0.019000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4a901ea3-d6ab-4e33-a1a5-1704d5d0bdbf
+  Components:
+    - !<own> 9bfdfb99-0f32-4f11-b058-1540dcc5c97b
+- !<ObjectPrefabAssetData/b02e2f18-ca7e-47e3-b91a-c7952731324f>
+  SourceRemaps:
+    - 0dca7626-ff65-445b-91fc-22c391de4064: 7b6499a9-0f13-4ab8-975c-d0ade49a18c4
+    - 3892439f-4262-4b61-95d7-5ff97d68f213: f6d3e126-584b-4aa3-a06e-fadc0851de62
+    - 86e2d36c-056d-4e44-ba8a-7113bb0d6dea: 9bfdfb99-0f32-4f11-b058-1540dcc5c97b
+    - 8f2069d4-9c76-492d-96b8-cbe7133bba26: ad95f78e-f715-475f-bfc1-f83eeca18305
+    - 956918ae-e4ac-4b01-b247-c3b3f3d2ccfa: 4a901ea3-d6ab-4e33-a1a5-1704d5d0bdbf
+    - 9b498382-abad-4d22-a763-f8ac0ee0d79e: b6f4ff52-94dd-4614-a534-737dc382eaed
+    - b8418325-1f78-4d82-b89b-e4a31fe46eae: c5839356-f1d7-4880-927f-be4f29d5389e
+    - d1edcee4-32dd-4c69-a355-63431c9c519d: aa38e010-3469-45e7-b640-b0566ff77200
+    - dc3673de-ad60-4788-bb7a-59e339ae66d4: 70f718b7-acf1-45f8-8e41-ef3f8d0a6ef4
+  SourceState: !<own> 7b6499a9-0f13-4ab8-975c-d0ade49a18c4
+- !<SceneObject/b6f4ff52-94dd-4614-a534-737dc382eaed>
+  PrefabRemaps:
+    []
+  Name: Simple Emitter
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: -85.596817, z: 0.000000}
+    Scale: {x: 0.794665, y: 0.100000, z: 0.125839}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> aa38e010-3469-45e7-b640-b0566ff77200
+- !<SceneObject/c5839356-f1d7-4880-927f-be4f29d5389e>
+  PrefabRemaps:
+    []
+  Name: Truc blanc
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 2.631497, y: -1.716181, z: -39.356453}
+    Rotation: {x: 0.000000, y: 52.402847, z: 0.000000}
+    Scale: {x: 10.000000, y: 10.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> ad95f78e-f715-475f-bfc1-f83eeca18305
+    - !<own> b6f4ff52-94dd-4614-a534-737dc382eaed
+  Components:
+    - !<own> f6d3e126-584b-4aa3-a06e-fadc0851de62
+- !<RenderMeshVisual/f6d3e126-584b-4aa3-a06e-fadc0851de62>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 56826c36-629b-4c33-88ef-8f5c08f81c37
+  Mesh: !<reference> ae6e6fe4-0f26-4dbc-ab09-1ab7e074c081
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

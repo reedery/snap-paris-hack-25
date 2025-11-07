@@ -1,0 +1,63 @@
+- !<AssetImportMetadata/3f54d1c2-3307-9fc2-43bb-bf0f835d1589>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 884561bb-92fd-4f5a-940e-fdfe102eddeb
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 884561bb-92fd-4f5a-940e-fdfe102eddeb
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 9c6ad5a7-6e49-4f14-beb1-7dbaeb947543
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/9c6ad5a7-6e49-4f14-beb1-7dbaeb947543>
+  SourceRemaps:
+    - 6c265898-9592-4ecb-85ef-3bdbe52b7c0a: e3edc41f-e9a4-49e2-98d8-54c26808a6cc
+    - 884561bb-92fd-4f5a-940e-fdfe102eddeb: f13d7112-dca2-4cab-9c74-9431f8fa8b5c
+    - b53f8d16-5048-40a5-a290-cbaa7954772b: bc666fb1-efbf-4975-9a80-58108140e8f6
+  SourceState: !<own> f13d7112-dca2-4cab-9c74-9431f8fa8b5c
+- !<SceneObject/bc666fb1-efbf-4975-9a80-58108140e8f6>
+  PrefabRemaps:
+    []
+  Name: SM_PhotoBG
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: -72.670982}
+    Rotation: {x: 0.000000, y: -90.000000, z: 0.000000}
+    Scale: {x: 0.500000, y: 0.500000, z: 0.500000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e3edc41f-e9a4-49e2-98d8-54c26808a6cc
+- !<RenderMeshVisual/e3edc41f-e9a4-49e2-98d8-54c26808a6cc>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a22113c1-5f7b-49fa-8b84-f6806519fb9e
+  Mesh: !<reference> 7e199d8e-d795-4823-9166-78f01ba7f728
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefab/f13d7112-dca2-4cab-9c74-9431f8fa8b5c>
+  PackagePath: ""
+  objects:
+    - !<own> bc666fb1-efbf-4975-9a80-58108140e8f6
+  LazyLoading: false
+  RetainAssets: true

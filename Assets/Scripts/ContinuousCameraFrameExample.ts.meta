@@ -27,21 +27,45 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    backgrounds: false
     camera: false
+    center: false
+    greenMaterial: false
+    images: false
+    panel: false
     text: false
+    texts: false
     uiImage: false
+    whitePrefab: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - uiImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
-      camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+    - images: !<reference.Image[]>
+        []
+      backgrounds: !<reference.SceneObject[]>
+        []
+      texts: !<reference.Text[]>
+        []
+      uiImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      camera: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       text: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      center: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      panel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      greenMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      whitePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
+    - "// @input Component.Image[] images = {}"
+    - "// @input SceneObject[] backgrounds = {}"
+    - "// @input Component.Text[] texts"
     - '// @input Component.Image uiImage {"hint":"The image in the scene that will be showing the captured frame."}'
-    - // @input Component.Camera camera
+    - // @input SceneObject camera
     - // @input Component.Text text
+    - // @input SceneObject center
+    - // @input SceneObject panel
+    - // @input Asset.Material greenMaterial
+    - // @input Asset.ObjectPrefab whitePrefab
